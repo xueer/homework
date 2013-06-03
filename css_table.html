@@ -1,0 +1,136 @@
+<html>
+<head>
+<style type="text/css">
+h1 {color:#00ff00}
+p {color:red}
+table.one
+{
+table-layout: automatic
+}
+table.two
+{
+table-layout: fixed
+}
+table
+{
+border-collapse: separate;
+empty-cells: hide;
+}
+table
+  {
+  border-collapse:collapse;
+  }
+
+table, td, th
+  {
+  border:1px solid black;
+  }
+table.three 
+{
+border-collapse: separate;
+border-spacing: 10px
+}
+table.four
+{
+border-collapse: separate;
+border-spacing: 10px 50px
+}
+caption
+{
+caption-side:bottom
+}
+
+</style>
+</head>
+<body>
+<h1>本例演示如何设置表格的布局。</h1>
+<table class="one" border="1" width="100%">
+<tr>
+<td width="20%">1000000000000000000000000000</td>
+<td width="40%">10000000</td>
+<td width="40%">100</td>
+</tr>
+</table>
+
+<br />
+
+<table class="two" border="1" width="100%">
+<tr>
+<td width="20%">1000000000000000000000000000</td>
+<td width="40%">10000000</td>
+<td width="40%">100</td>
+</tr>
+</table>
+<h1> 本例演示是否显示表格中的空单元。</h1>
+<table border="1">
+<tr>
+<td>Mary</td>
+<td>John</td>
+</tr>
+<tr>
+<td>Tom</td>
+<td></td>
+</tr>
+</table>
+
+<p><b>注释：</b>如果已规定 !DOCTYPE，那么 Internet Explorer 8 （以及更高版本）支持 empty-cells 属性。</p>
+<hr>
+<h1>本例演示合并表格边框</h1>
+<table>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+</tr>
+<tr>
+<td>Bill</td>
+<td>Gates</td>
+</tr>
+<tr>
+<td>Steven</td>
+<td>Jobs</td>
+</tr>
+</table>
+<p><b>注释：</b>如果没有规定 !DOCTYPE，border-collapse 属性可能会引起意想不到的错误。</p>
+<h1>本例演示如何设置单元格边框之间的距离</h1>
+<table class="three" border="1">
+<tr>
+<td>Adams</td>
+<td>John</td>
+</tr>
+<tr>
+<td>Bush</td>
+<td>George</td>
+</tr>
+</table>
+
+<br />
+
+<table class="four" border="1">
+<tr>
+<td>Carter</td>
+<td>Thomas</td>
+</tr>
+<tr>
+<td>Gates</td>
+<td>Bill</td>
+</tr>
+</table>
+
+<p><b>注释：</b>如果已规定 !DOCTYPE，那么 Internet Explorer 8 （以及更高版本）支持 border-spacing 属性。</p>
+<h1>本例演示如何定位表格的标题。</h1>
+<table border="1">
+<caption>This is a caption</caption>
+<tr>
+<td>Adams</td>
+<td>John</td>
+</tr>
+<tr>
+<td>Bush</td>
+<td>George</td>
+</tr>
+</table>
+
+<p><b>注释：</b>如果已规定 !DOCTYPE，那么 Internet Explorer 8 （以及更高版本）支持 caption-side 属性。</p>
+</body>
+</html>
+
